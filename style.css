@@ -24,6 +24,18 @@ p{
     font-size: var(--texto-px);
     margin: 0;
 }
+
+.nav-p-item:hover {
+    color: white;
+    border-radius: 2rem;
+    background-color: var(--verde-oscuro);
+    padding: 0.5rem 1rem !important;
+}
+
+.nav-item > a:hover {
+    color:white;
+}
+
 /********** VARIABLES GLOBALES **********/
 
 
@@ -163,6 +175,10 @@ ul{
     border-radius: 2rem;
     background-color: var(--verde-oscuro);
     padding: 0.5rem 1rem !important;
+}
+
+.actual > a {
+    color: white;
 }
 
 
