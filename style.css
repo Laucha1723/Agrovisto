@@ -32,7 +32,7 @@ p{
 .navbar{
     z-index: 1;
     background-color: transparent;
-    padding: 1rem 4rem;
+    margin: 1rem 4rem;
 }
 
 ul{
@@ -100,6 +100,7 @@ ul{
     
     .navbar{
         margin: 1rem 0 0 1rem;
+        padding: 0;
     }
 
     .navbar-nav{
