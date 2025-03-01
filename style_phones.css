@@ -1,0 +1,464 @@
+/********** VARIABLES GLOBALES **********/
+:root {
+    --fuente-texto: roboto;
+    --verde-oscuro: rgb(0, 111, 50);
+    --verde-difuminado: rgba(0, 111, 50, 0.21);
+    --azul: rgb(46, 39, 108);
+    --texto-px: 4.5vw; /* 19Pt*/
+}
+
+body{
+    font-family: var(--fuente-texto);
+    text-align: justify;
+}
+
+p, li>a, .accordion-item {
+    font-size: var(--texto-px);
+}
+
+/********** VARIABLES GLOBALES **********/
+
+
+
+
+
+/******************** INDEX ********************/
+
+
+/********** NAVBAR **********/
+
+nav{
+    position: relative;
+    z-index: 1;
+}
+
+nav > button {
+    margin: 1.5rem 0 0 9%;
+    border: 2px solid var(--verde-oscuro);
+    border-radius: 10px;
+    z-index: 1;
+    width: 12%;
+}
+
+button > img {
+    width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.show-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    float: left;
+    height: 100vh;
+    width: 60vw;
+    border-left: solid 1px lightgrey;
+    background-color: white;
+}
+
+.show-menu > ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: baseline;
+    list-style-type: none;
+    padding: 0 0 0 1.5rem;
+    margin: 1rem 0 0 0;
+}
+
+.nav-item {
+    margin: 1rem 0;
+    border: solid 1px transparent;
+    border-radius: 10px;
+    padding: 0.7rem 1.3rem;
+}
+
+ul.menu-horizontal > li.nav-item:hover {
+    background-color: var(--verde-oscuro);
+}
+
+li > a > img{
+    width: 80%; /* 11rem */
+    padding-left: 1.3rem;
+    margin: 6% 0 1.2rem 0
+}
+
+
+ul.menu-horizontal > li > a {
+    color: var(--verde-oscuro);
+}
+
+ul.menu-horizontal > li.nav-item > a:hover {
+    color: white;
+}
+
+.toggle-menu {
+    display: block;
+    position: fixed;
+}
+  
+.ocultar-boton {
+    visibility: hidden;
+}
+
+
+/********** NAVBAR **********/
+
+
+/********** LANDING ***********/
+
+.carousel{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.carousel-item{
+    position: relative;
+}
+
+.carousel-item > div{
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    font-size: 9vw;
+    font-weight: 300;
+    opacity: 0.5;
+    transform: translate(-50%, -50%);
+}
+
+.carousel-item > img{
+    height: 100vh;
+    object-fit: cover;
+}
+
+.carousel-ganaderia > img {
+    object-position: 24% 0;
+}
+
+.carousel-agricola > img {
+    object-position: 14% 0;
+}
+
+.carousel-certificadora  > img{
+    object-position: 55% 0;
+}
+
+.carousel-item > div > a{
+    color: white;
+}
+
+.carousel > button{
+    height: fit-content;
+    top: 50%;
+}
+
+.carousel-control-prev{
+    transform: translate(0%, -50%);
+}
+
+.carousel-control-next{
+    transform: translate(0%, -50%);
+}
+
+/********** LANDING ***********/
+
+
+/******************** INDEX ********************/
+
+
+
+
+
+/******************** CERTIFICADORA ********************/
+
+/*********** TOMATES ***********/
+
+.seccion-tomates, .seccion-granos {
+    display: flex;
+    margin: 6% 8%;
+    font-weight: 500;
+}
+
+.seccion-tomates {
+    position: relative;
+    flex-direction: column;
+    gap: 3vw;
+}
+
+.titulo-tomates{
+    color: var(--verde-oscuro);
+}
+
+.titulo-somos-certificadores{
+    font-weight: 300;
+    font-size: 9.7vw; /* 54.53px */
+}
+
+.titulo-prod-organicos{
+    font-weight: 900;
+    font-size: 11vw; /* 61.73px */
+}
+
+.parrafo-tomates{
+    margin: 4% 0.54% 9%;
+}
+
+.texto-resaltado{
+    font-weight: 900;
+    color: var(--verde-oscuro);
+}
+
+.texto-tomates > img{
+    position: absolute;
+    width: 20%;
+    top: 19%;
+    left: 87%;
+    transform: translate(-50%, 0%);
+    rotate: -20deg;
+}
+
+/*********** TOMATES ***********/
+
+
+/*********** GRANOS ************/
+
+.seccion-granos {
+    flex-direction: column-reverse;
+    margin-top: 4rem;
+    gap: 17vw;
+}
+
+.grid-granos{
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    align-items: baseline;
+    align-content: space-evenly;
+    column-gap: 0%;
+    row-gap: 2%;
+    padding: 0% 4%;
+}
+
+.item1-grid{
+    grid-column: 1 / 3;
+}
+
+.grid-granos > div {
+    font-size: 4.5vw;
+}
+
+.grid-granos > img{
+    width: 1rem;
+}
+
+
+/*********** GRANOS ************/
+
+
+/*********** FOOTER ************/
+
+footer{
+    background-color: var(--verde-oscuro);
+    text-align: center;
+    padding: 6% 8%;
+    color: white;
+    padding-top: 3rem;
+    font-size: 5.2vw; /* 22Pt */
+}
+
+.p-footer{
+    font-size: var(--fuente-texto);
+    font-weight: 500;
+}
+
+footer > button{
+    border-radius: 10px;
+    padding: 0.6rem 2.5rem;
+    background-color: white;
+    color: var(--verde-oscuro);
+    font-weight: 700;
+}
+
+footer > p{
+    margin-bottom: 2rem;
+}
+
+footer a{
+    color: var(--verde-oscuro);
+}
+
+/*********** FOOTER ************/
+
+/******************** CERTIFICADORA ********************/
+
+
+
+
+
+/********************** CONTACTO **********************/
+
+.body-contacto{
+    background-color: var(--verde-oscuro);
+}
+
+.seccion-contacto {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 8vh;
+    margin: 3% 9%;
+    font-weight: 300;
+    text-align: center;
+}
+
+.flex-info-contacto > p {
+    font-size: 4.86vw;
+    color: white;
+}
+
+.presupuesto-ajustado{
+    margin: 3vh 0 0 0;
+}
+
+.a-tus-necesidades{
+    margin: 0;
+}
+
+.flex-info-contacto > button {
+    font-size: 4.2vw;
+    font-weight: 900;
+    color: var(--verde-oscuro);
+    border-radius: 10px;
+    width: 93.5%;
+    padding: 3% 0%;
+    margin: 5vh 0 8vh 0;
+}
+
+.flex-info-contacto i {
+    color: white;
+}
+
+.redes{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+/********************** CONTACTO **********************/
+
+
+
+
+
+/********************** GANADERIA **********************/
+
+.seccion-ganaderia {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    margin: 6% 8%;
+    gap: 3vw;
+}
+
+.ganaderia-primer-parrafo{
+    margin-bottom: 12%;
+}
+
+/********************** GANADERIA **********************/
+
+
+
+
+
+
+/********************** SERVICIOS **********************/
+
+.seccion-servicios {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    margin: 6% 8%;
+    gap: 3vw;
+    font-size: var(--texto-px);
+}
+
+.servicios-primer-parrafo, .lista-servicios {
+    font-style: italic;
+}
+
+.servicios-primer-parrafo{
+    margin: 0 1% 9%;
+}
+
+.lista-servicios{
+    font-weight: 300;
+}
+
+.ganaderia-primer-parrafo{
+    margin-bottom: 12%;
+}
+
+.accordion-item, .accordion-item button  {
+    background-color: var(--verde-difuminado);
+    border-radius: 10px !important;
+}
+
+.accordion button{
+    font-size: var(--texto-px);
+    font-weight: 900;
+}
+
+.accordion{
+    margin: 0 8% 6%;
+    --bs-accordion-active-bg: var(--verde-difuminado);
+}
+
+.accordion-item{
+    margin-top: 3%;
+}
+
+.accordion-button:not(.collapsed) {
+    color: black;
+}
+
+.accordion li {
+    text-align: left;
+    font-weight: 300;
+    font-style: italic;
+    font-size: var(--texto-px);
+}
+
+/********************** SERVICIOS **********************/
+
+
+
+
+
+/******************** QUIENES SOMOS *********************/
+
+.seccion-quienes-somos {
+    margin: 6% 10% 0%;
+}
+
+.seccion-quienes-somos > img{
+    width: -webkit-fill-available;
+    margin-bottom: 10%;
+}
+
+.seccion-quienes-somos > p {
+    font-weight: 900;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 10%;
+    color: var(--verde-oscuro);
+}
+
+/******************** QUIENES SOMOS *********************/

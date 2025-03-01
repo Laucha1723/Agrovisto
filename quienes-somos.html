@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Laureano Diaz Velez">
-        <title>Contacto</title>
+        <title>Quiénes somos</title>
     
         <!-- Bootstrap-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -27,15 +27,15 @@
         <script src="https://kit.fontawesome.com/e63b8667da.js" crossorigin="anonymous"></script>
     
     </head>
-    <body class="body-contacto">
+    <body class="qs-body">
         
-    <!-- TOP NAVBAR -->
-    <nav>
-  
+      <!-- TOP NAVBAR -->
+      <nav>
+    
         <button id="id-boton-menu" onclick="toggleMenu()">
             <img src="./img/menu_nav.svg" alt="boton-menu">
         </button>
-  
+
         <div id="id-show-menu" class="show-menu">
           <ul class="menu-horizontal">
             <li class="nav-img">
@@ -47,7 +47,7 @@
               <a href="./servicios.html">SERVICIOS</a>
             </li>
             <li class="nav-item">
-              <a href="./quienes-somos.html">¿QUIÉNES SOMOS?</a>
+              <a href="./quienes-somos.html" class="actual">¿QUIÉNES SOMOS?</a>
             </li>
             <li class="nav-item">
               <a href="./certificadora.html">CERTIFICADORA</a>
@@ -56,45 +56,40 @@
               <a href="./ganaderia.html">GANADERÍA</a>
             </li>
             <li class="nav-item">
-                <a href="./contacto.html" class="actual">CONTACTO</a>
+                <a href="./contacto.html">CONTACTO</a>
             </li>
           </ul>
         </div>
-  
+
       </nav>
       <!-- END TOP NAVBAR -->
         
 
-        <!-- CONTACTO -->
-        <div class="seccion-contacto" onclick="ocultarMenu()">
-            <img src="./img/banner-contacto.jpg" alt="granos">
-            <div class="info-contacto">
-              <div class="flex-info-contacto">
-                <p class="presupuesto-ajustado">PRESUPUESTO AJUSTADO</p>
-                <p class="a-tus-necesidades">A TUS NECESIDADES</p>
-                <button>POR ACÁ PODÉS CONTACTARNOS</button>
-                <div class="redes">
-                  <a href="https://wa.me/+5492474678495" target="_blank">
-                    <i class="fa-brands fa-whatsapp fa-2xl prod-favicon"></i>
-                  </a>
-                  <a href="mailto:administracion@agrovisto.com?subject=Consulta%20Agrovisto%20">
-                    <i class="fa-regular fa-envelope fa-2xl prod-favicon"></i>
-                  </a>
-                  <a href="https://www.instagram.com/agrovisto" target="_blank">
-                    <i class="fa-brands fa-instagram fa-2xl prod-favicon"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-        </div>
-        <!--CONTACTO -->
+      <!-- QUIENES SOMOS -->
+
+      <div class="seccion-quienes-somos" onclick="ocultarMenu()">
+        <p> Somos una empresa dedicada al monitoreo y la optimización de procesos agrícolas y ganaderos. </p>
+        <img src="./img/quienes-somos-tractor.jpg" alt="quienes-somos">
+        <p>Nuestro compromiso es garantizar prácticas sostenibles, mejorar la producción y ofrecer soluciones eficientes.</p>
+        <p>¡Acompañanos en este camino hacia un agro más responsable!</p>
+      </div>
+
+      <!-- QUIENES SOMOS -->
+
         
 
-        <!-- Js -->
-        <script src="./index.js"></script>
-        
 
-        <!-- Bootstrap -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <!-- MAPA ARGENTINA -->
+      <object data="./img/mapa_v2.svg" type="image/svg+xml" viewBox="0 0 100 100" >
+        <img src="./img/agrovisto logo.png" />
+      </object>
+      <!-- MAPA ARGENTINA -->
+
+
+      <!-- Js -->
+      <script src="./index.js"></script>    
+
+      <!-- Bootstrap -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </body>
 </html>

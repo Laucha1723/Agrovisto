@@ -1,0 +1,584 @@
+/********** VARIABLES GLOBALES **********/
+:root {
+    --fuente-texto: roboto;
+    --verde-oscuro: rgb(0, 111, 50);
+    --verde-svg: rgb(3, 40, 9);
+    --verde-difuminado: rgba(0, 111, 50, 0.21);
+    --azul: rgb(46, 39, 108);
+    --texto-px: 1.48vw;
+}
+
+body{
+    font-family: var(--fuente-texto);
+    text-align: justify;
+}
+
+p, li>a, .grid-granos > div {
+    font-size: var(--texto-px);
+    font-family: var(--fuente-texto);
+    font-weight: 700;
+}
+
+nav li > a{
+    font-size: 1.28vw;
+}
+
+/********** VARIABLES GLOBALES **********/
+
+
+
+
+
+/******************** INDEX ********************/
+
+
+
+
+
+/********** NAVBAR **********/
+
+nav{
+    margin: 1% 2% 3%;
+    position: relative;
+    z-index: 1;
+}
+
+nav > button {
+    display: none;
+}
+
+ul.menu-horizontal {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0;
+}
+
+.nav-img{
+    width: 12%;
+}
+
+.nav-item {
+    margin: 2% 0 0 0;
+}
+
+li img{
+    width: 100%;
+    padding-left: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-item > a {
+    border: solid 1px transparent;
+    border-radius: 10px;
+    padding: 0.7rem 1.3rem;
+    display: inline-block;
+    color: var(--verde-oscuro);
+}
+
+.nav-item > a:hover{
+    background-color: var(--verde-oscuro);
+    color: white;
+}
+
+.nav-item > .a-landing{
+    color: white;
+}
+
+.actual{
+    background-color: var(--verde-oscuro);
+    color: white !important;
+}
+
+/********** NAVBAR **********/
+
+
+
+
+
+/********** LANDING ***********/
+
+/* CAROUSEL */
+
+.carousel{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.carousel-item{
+    position: relative;
+}
+
+.carousel-item > div{
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    font-size: 9vw;
+    font-weight: 300;
+    opacity: 0.5;
+    transform: translate(-50%, -50%);
+}
+
+.carousel-item > img{
+    height: 100vh;
+    object-fit: cover;
+}
+
+.carousel-ganaderia > img {
+    object-position: 24% 0;
+}
+
+.carousel-agricola > img {
+    object-position: 14% 0;
+}
+
+.carousel-certificadora  > img{
+    object-position: 55% 0;
+}
+
+.carousel-item > div > a{
+    color: white;
+}
+
+.carousel > button{
+    height: fit-content;
+    top: 50%;
+}
+
+.carousel-control-prev{
+    transform: translate(0%, -50%);
+}
+
+.carousel-control-next{
+    transform: translate(0%, -50%);
+}
+
+/********** LANDING ***********/
+
+
+/******************** INDEX ********************/
+
+
+
+
+
+/******************** CERTIFICADORA ********************/
+
+
+/*********** TOMATES ***********/
+
+.seccion-tomates > img, .seccion-granos > img, .seccion-contacto > img, .seccion-servicios > img, .seccion-ganaderia > img {
+    min-width: 50%;
+}
+
+/*
+
+Estas clases deben ser agregadas a un div que envuelva a las imagenes que queremos modificar
+div-envolvente{
+    min-width: 50%;
+}
+
+img-envuelta{
+    width: 100%
+}
+
+.difuminado-derecha{
+    min-width: 50%;
+    mask-image: linear-gradient(270deg, rgba(139, 167, 32, 0) 0%, rgba(255, 255, 255, 1) 30%);
+}
+
+.difuminado-izquierda{
+    min-width: 50%;
+    mask-image: linear-gradient(90deg, rgba(139, 167, 32, 0) 0%, rgba(255, 255, 255, 1) 30%);
+}
+*/
+
+.seccion-tomates, .seccion-granos {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+
+.seccion-tomates{
+    position: relative;
+}
+
+.texto-tomates{
+    padding: 0 4.2%;
+}
+
+.titulo-tomates{
+    line-height: 1.2;
+    margin-bottom: 7%;
+    color: var(--verde-oscuro);
+}
+
+.titulo-tomates{
+    color: var(--verde-oscuro);
+}
+
+.titulo-somos-certificadores{
+    font-weight: 300;
+    font-size: 3.14vw; /* 54.53px */
+}
+
+.titulo-prod-organicos{
+    font-weight: 900;
+    font-size: 3.47vw; /* 61.73px */
+}
+
+.texto-resaltado{
+    font-weight: 900;
+    color: var(--verde-oscuro);
+}
+
+.texto-tomates > img{
+    position: absolute;
+    width: 8%;
+    bottom: 7%;
+    left: 42%;
+    transform: translate(-50%, 0%);
+    rotate: -20deg;
+}
+
+/*********** TOMATES ***********/
+
+
+/*********** GRANOS ************/
+
+.grid-granos{
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    align-items: baseline;
+    align-content: center;
+    column-gap: 5%;
+    row-gap: 5%;
+    padding: 0 4.2%;
+}
+
+.item1-grid{
+    grid-column: 1 / 3;
+}
+
+.grid-granos > img{
+    width: 1rem;
+}
+
+
+/*********** GRANOS ************/
+
+
+/*********** FOOTER ************/
+
+footer{
+    background-color: var(--verde-oscuro);
+    text-align: center;
+    padding: 2rem;
+    color: white;
+    padding-top: 3rem;
+    font-size: 1.75vw; /* 22Pt */
+}
+
+.p-footer{
+    font-weight: 500;
+}
+
+footer > button{
+    border-radius: 20px;
+    padding: 0.6rem 2.5rem;
+    background-color: white;
+    color: var(--verde-oscuro);
+    font-weight: 700;
+}
+
+footer > *{
+    margin-bottom: 2rem;
+}
+
+footer a{
+    color: var(--verde-oscuro);
+}
+
+/*********** FOOTER ************/
+
+/******************** CERTIFICADORA ********************/
+
+
+
+
+
+/********************** CONTACTO **********************/
+
+.seccion-contacto {
+    background-color: var(--verde-oscuro);
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.info-contacto{
+    width: 100%;
+}
+
+.flex-info-contacto > p {
+    font-size: 2vw;
+    font-weight: 300;
+    color: white;
+}
+
+.flex-info-contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.presupuesto-ajustado{
+    margin: 3vh 0 0 0;
+}
+
+.a-tus-necesidades{
+    margin: 0;
+}
+
+.flex-info-contacto > button {
+    font-size: 1.76vw;
+    font-weight: 900;
+    color: var(--verde-oscuro);
+    border-radius: 30px;
+    padding: 2% 3%;
+    margin: 5vh 0 8vh 0;
+}
+.flex-info-contacto i {
+    color: white;
+}
+
+.redes i{
+    margin: 0 2.5vw;
+    font-size: 3vw;
+}
+
+.redes i:hover{
+    transform: scale(1.2);
+}
+
+
+/********************** CONTACTO **********************/
+
+
+
+
+
+/********************** GANADERIA **********************/
+
+.seccion-ganaderia {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+
+.texto-ganaderia{
+    padding: 0 4.2%;
+}
+
+.ganaderia-primer-parrafo{
+    margin-bottom: 12%;
+}
+
+
+/********************** GANADERIA **********************/
+
+
+
+
+
+/********************** SERVICIOS **********************/
+
+.seccion-servicios {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: var(--texto-px);
+    margin-bottom: 4%;
+}
+
+.texto-servicios{
+    padding: 0 4.2%;
+}
+
+.servicios-primer-parrafo, .lista-servicios {
+    font-style: italic;
+}
+
+.servicios-primer-parrafo{
+    margin: 0 2% 9%;
+}
+
+.lista-servicios{
+    font-weight: 300;
+}
+
+.ganaderia-primer-parrafo{
+    margin-bottom: 12%;
+}
+
+.accordion-item, .accordion-item button  {
+    background-color: var(--verde-difuminado);
+    border-radius: 10px !important;
+}
+
+.accordion button{
+    font-size: var(--texto-px);
+    font-weight: 900;
+}
+
+.accordion{
+    --bs-accordion-active-bg: var(--verde-difuminado);
+    margin: 0 4% 3%;
+}
+
+.accordion-item{
+    margin-bottom: 1.5%;
+}
+
+.accordion-body > p{
+    margin: 0;
+}
+
+.accordion-button:not(.collapsed) {
+    color: black;
+}
+
+.accordion li {
+    text-align: left;
+    font-weight: 300;
+    font-style: italic;
+    font-size: var(--texto-px);
+}
+
+/********************** SERVICIOS **********************/
+
+
+
+
+
+/********************** QUIENES SOMOS **********************/
+
+.qs-body{
+    background: #6faad4;
+}
+
+.qs-body > nav{
+    background-color: white;
+    padding: 1% 2% 2.29%;
+    margin: 0;
+
+}
+
+.seccion-quienes-somos {
+    background-image: url("./img/quienes-somos-tractor.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 71vh; /* 78 */
+    padding-top: 3.5%;
+    mask-image: linear-gradient(0deg, rgba(139, 167, 32, 0) 0%, rgba(255, 255, 255, 1) 30%);
+}
+
+
+.difuminado-abajo{
+    mask-image: linear-gradient(0deg, rgba(139, 167, 32, 0) 0%, rgba(255, 255, 255, 1) 30%);
+}
+
+.seccion-quienes-somos > img{
+    display: none;
+}
+
+.seccion-quienes-somos > p {
+    z-index: 1;
+    font-weight: 900;
+    font-style: italic;
+    color: white;
+    text-align: center;
+    margin-bottom: 1.2%;
+}
+
+
+/********************** QUIENES SOMOS **********************/
+
+
+
+
+.cls-1{
+    letter-spacing:0em;
+}
+
+.cls-2,.cls-3{
+    fill:var(--verde-difuminado)
+}
+
+.cls-2,.cls-4{
+    opacity:.5;
+}
+
+.cls-5{
+    fill:rgb(111, 170, 212);
+}
+
+.cls-6{
+    opacity:.3;
+}
+
+.cls-7{
+    font-size:22.02px;
+}
+
+.cls-7,.cls-8{
+    fill:#fff;
+    font-family:Roboto-Medium,Roboto;
+    font-weight:500;
+}
+
+.cls-9{
+    fill:#adafb2;
+}
+
+.cls-10{
+    fill:none;
+}
+
+.cls-11{
+    fill:#0a411c;
+}
+.cls-12{
+    letter-spacing:0em;
+}
+
+.cls-13{
+    letter-spacing:0em;
+}
+
+.cls-14{letter-spacing:-.02em;}.cls-15{letter-spacing:-.03em;}.cls-16{fill:#68a2c9;}.cls-17{letter-spacing:0em;}.cls-18{letter-spacing:-.01em;}.cls-19{fill:#639cc4;}.cls-20{fill:#ededed;}.cls-21{fill:#5e97bf;}.cls-22{fill:#2e276c;}.cls-23{clip-path:url(#clippath);}.cls-24{letter-spacing:0em;}.cls-8{font-size:21.4px;}
+
+
+
+/*
+.cls-1{
+    hover: red;
+}
+
+.cls-3:hover{
+    fill:red;
+}
+
+#006f32;
+    */

@@ -3,13 +3,20 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Laureano Diaz Velez">
         <title>Certificadora</title>
     
         <!-- Bootstrap-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     
         <!-- Css -->
-        <link rel="stylesheet" href="./style.css">
+        <link rel="icon" href="./img/favicon-agrovisto.png">
+        <!-- Celulares-->
+        <link rel="stylesheet" media="screen and (max-width: 480px)" href="./style_phones.css">
+        <!-- Tablets-->
+        <link rel="stylesheet" media="screen and (min-width: 481px) and (max-width: 1200px)" href="./style_phones.css">
+        <!-- Laptops-->
+        <link rel="stylesheet" media="screen and (min-width: 1201px)" href="./style_laptops.css">
     
         <!-- Google fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,79 +26,91 @@
     </head>
     <body>
         
-        <!-- TOP NAVBAR -->
-        <nav class="navbar navbar-expand-md navbar-light">
-    
-            <!-- OFF CANVAS -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- OFF CANVAS -->
-        
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
-                <div class="navbar-list offcanvas-body menu-item-flex">
-                    <ul class="justify-content-between navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a href="./index.html">
-                                <img class="logo-agrovisto" src="./img/agrovisto logo.png" alt="logo-agrovisto">
-                            </a>
-                        </li>
-                        <li class="nav-item nav-p-item">
-                            <a class="nav-link certificadora-nav-link" href="#servicios">SERVICIOS</a>
-                        </li>
-                        <li class="nav-item nav-p-item">
-                            <a class="nav-link certificadora-nav-link" href="#quienes-somos">¿QUIÉNES SOMOS?</a>
-                        </li>
-                        <li class="nav-item actual">
-                            <a class="nav-link" href="#">CERTIFICADORA</a>
-                        </li>
-                        <li class="nav-item nav-p-item">
-                            <a class="nav-link certificadora-nav-link" href="./contacto.html">CONTACTO</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- END TOP NAVBAR -->
+    <!-- TOP NAVBAR -->
+    <nav>
+  
+        <button id="id-boton-menu" onclick="toggleMenu()">
+            <img src="./img/menu_nav.svg" alt="boton-menu">
+        </button>
+  
+        <div id="id-show-menu" class="show-menu">
+          <ul class="menu-horizontal">
+            <li class="nav-img">
+              <a href="./index.html">
+                <img src="./img/agrovisto logo.png" alt="logo-agrovisto">
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="./servicios.html">SERVICIOS</a>
+            </li>
+            <li class="nav-item">
+              <a href="./quienes-somos.html">¿QUIÉNES SOMOS?</a>
+            </li>
+            <li class="nav-item">
+              <a href="./certificadora.html" class="actual">CERTIFICADORA</a>
+            </li>
+            <li class="nav-item">
+              <a href="./ganaderia.html">GANADERÍA</a>
+            </li>
+            <li class="nav-item">
+                <a href="./contacto.html">CONTACTO</a>
+            </li>
+          </ul>
+        </div>
+  
+      </nav>
+      <!-- END TOP NAVBAR -->
 
 
         <!-- TOMATES-->
-        <div class="seccion-tomates">
+        <div class="seccion-tomates" onclick="ocultarMenu()">
             <div class="texto-tomates">
                 <p class="titulo-tomates"><span class="titulo-somos-certificadores">SOMOS CERTIFICADORES DE </span><span class="titulo-prod-organicos">PRODUCTOS ORGÁNICOS</span></p>
-                <p class="">
-                Este servicio asegura que tus productos <span class="texto-resaltado">agrícolas, ganaderos o procesados</span> cumplan con los estándares más altos de calidad y sostenibilidad. Con nuestra certificación, tu producto podrá destacarse en el mercado como orgánico y responsable, ganando la confianza de los consumidores que buscan lo mejor para su salud y el planeta. ¡Una garantía de calidad que abre nuevas oportunidades para tu negocio!
+                <p class="parrafo-tomates">
+                Este servicio asegura que tus productos <span class="texto-resaltado">agrícolas, ganaderos o procesados</span> cumplan con los estándares más altos de calidad y sostenibilidad. 
+                Junto con nuestra certificación, tu producto podrá destacarse en el mercado como orgánico y responsable, ganando la confianza de los consumidores que buscan lo mejor para su salud y el planeta.
+                <br>
+                ¡Una garantía de calidad que abre nuevas oportunidades para tu negocio!
                 </p>
+                <img src="./img/logo-certificadora.png" alt="logo-certificadora">
             </div>
-            <img src="./img/certificadora-tomates.jpg" alt="tomates">
+              <img src="./img/certificadora-tomates.jpg" alt="tomates">
         </div>
         <!-- TOMATES -->
-        
+  
 
         <!-- GRANOS -->
-        <div class="seccion-granos">
+        <div class="seccion-granos" onclick="ocultarMenu()">
             <img src="./img/certificadora-trigo.jpg" alt="granos">
-            <div class="texto-granos">
-                <div></div>
-                <div class="">Contar con Agrovisto como tu certificadora de productos orgánicos trae múltiples beneficios:</div>
-                <img src="./img/tilde agrovisto.png" alt="tilde">
-                <div><span class="texto-resaltado">Confianza del consumidor:</span> nuestros certificados aseguran que tus productos cumplen con los estándares más exigentes de sostenibilidad y calidad.</div>
-                <img src="./img/tilde agrovisto.png" alt="tilde">
-                <div><span class="texto-resaltado">Acceso a mercados internacionales:</span> con nuestra certificación, tu producto puede destacarse en mercados que demandan lo orgánico.</div>
-                <img src="./img/tilde agrovisto.png" alt="tilde">    
-                <div><span class="texto-resaltado">Mejora en la rentabilidad:</span> los productos orgánicos son cada vez más valorados, lo que puede traducirse en un mayor valor en el mercado.</div>
+          <div class="grid-granos">
+                <div class="item1-grid">Contar con Agrovisto como tu certificadora de productos orgánicos trae múltiples beneficios:</div>
+                <img class="grid-img" src="./img/tilde agrovisto.png" alt="tilde">
+                <div><span class="texto-resaltado">Confianza con el consumidor:</span><br> tus productos cumplirán con los estándares más exigentes de sostenibilidad y también de calidad.</div>    
+                <img class="grid-img" src="./img/tilde agrovisto.png" alt="tilde">
+                <div><span class="texto-resaltado">Acceso a mercados internacionales:</span><br> tus productos pueden destacarse y expandirse en diversos mercados que demanden lo orgánico.</div>
+                <img class="grid-img" src="./img/tilde agrovisto.png" alt="tilde">    
+                <div><span class="texto-resaltado">Mejora en la rentabilidad:</span><br> los productos orgánicos son cada vez más valorados, lo que puede traducirse en un mayor valor en el mercado.</div>
             </div>
         </div>
         <!--GRANOS -->
 
 
         <!-- FOOTER -->
-        <footer class="footer-certificadora">
-            <p class="p-footer">Conocé todas las funciones de una certificadora de productos orgánicos.</p>
-            <p class="p-footer">En Agrovisto, te acompañamos en cada paso para asegurar que tus productos cumplan con los más altos estándares.</p>
-            <button class="boton-contanos-tu-proyecto">¡Contanos tu proyecto y te ayudamos a certificarlo!</button>
+        <footer class="footer-certificadora" onclick="ocultarMenu()">
+            <p>Conocé todas las funciones de una certificadora de productos orgánicos.</p>
+            <p>En Agrovisto, te acompañamos en cada paso para asegurar que tus productos cumplan con los más altos estándares.</p>
+             
+              <button>
+                <a href="https://wa.me/+5492473501333" target="_blank">
+                ¡Contanos tu proyecto y te ayudamos a certificarlo!
+                </a>
+              </button>
+            
         </footer>
         <!-- FOOTER -->
+        
+        <!-- Js -->
+        <script src="./index.js"></script>
         
         <!-- Bootstrap -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

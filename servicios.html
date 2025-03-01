@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Laureano Diaz Velez">
+        <title>Servicios</title>
+    
+        <!-- Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+        <!-- Css -->
+        <link rel="icon" href="./img/favicon-agrovisto.png">
+        <!-- Celulares-->
+        <link rel="stylesheet" media="screen and (max-width: 480px)" href="./style_phones.css">
+        <!-- Tablets-->
+        <link rel="stylesheet" media="screen and (min-width: 481px) and (max-width: 1200px)" href="./style_phones.css">
+        <!-- Laptops-->
+        <link rel="stylesheet" media="screen and (min-width: 1201px)" href="./style_laptops.css">
+    
+        <!-- Google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    </head>
+    <body>
+        
+    <!-- TOP NAVBAR -->
+    <nav>
+  
+        <button id="id-boton-menu" onclick="toggleMenu()">
+            <img src="./img/menu_nav.svg" alt="boton-menu">
+        </button>
+  
+        <div id="id-show-menu" class="show-menu">
+          <ul class="menu-horizontal">
+            <li class="nav-img">
+              <a href="./index.html">
+                <img src="./img/agrovisto logo.png" alt="logo-agrovisto">
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="./servicios.html" class="actual">SERVICIOS</a>
+            </li>
+            <li class="nav-item">
+              <a href="./quienes-somos.html">¿QUIÉNES SOMOS?</a>
+            </li>
+            <li class="nav-item">
+              <a href="./certificadora.html">CERTIFICADORA</a>
+            </li>
+            <li class="nav-item">
+              <a href="./ganaderia.html">GANADERÍA</a>
+            </li>
+            <li class="nav-item">
+                <a href="./contacto.html">CONTACTO</a>
+            </li>
+          </ul>
+        </div>
+  
+      </nav>
+      <!-- END TOP NAVBAR -->
+
+
+      <!-- SERVICIOS-->
+
+      <!-- SERVICIOS INTRODUCCION -->
+      <div class="seccion-servicios" onclick="ocultarMenu()">
+
+        <div class="texto-servicios">
+          <p class="servicios-primer-parrafo texto-resaltado">
+            Tenemos como objetivo optimizar los recursos, para lograr el
+            máximo beneficio productivo. Nuestra misión es estar antes
+            que el problema, brindando más opciones de manejo, por esto
+            mismo te ofrecemos soluciones integrales para el
+            sector agrícola y ganadero:
+          </p>
+          <ul class="lista-servicios">
+            <li>Gestión de personal y logística</li>
+            <li>Adquisición de insumos y manejo de instalaciones</li>
+            <li>Optimización de equipos</li>
+            <li>Manejo de producción y ventas</li>
+          </ul>
+        </div>
+
+        <img src="./img/servicios-tractor.jpg" alt="ganaderia">
+      
+      </div>
+
+      <!-- SERVICIOS INTRODUCCION -->
+
+      <!-- ACORDION -->
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button id="boton-0" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseCero" aria-expanded="false" aria-controls="flush-collapseCero">
+              OPTIMIZACIÓN DE RECURSOS
+            </button>
+          </h2>
+          <div id="flush-collapseCero" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <ul>
+                <li>Inspecciones</li>
+                <li>Muestreos</li>
+                <li>Monitoreos</li>
+                <li>Análisis de datos y variables</li>
+                <li>Administración</li>
+                <li>Asesoría</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button id="boton-1" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              MONITOREO DE PRESIEMBRA Y SIEMBRA
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <ul>
+                <li>Toma de muestra de suelo</li>
+                <li>Verificación de aislamiento</li>
+                <li>Verificación de mapa de lote y siembra</li>
+                <li>Elaboración de mapas de aislamiento</li>
+                <li>Recepción de fertilizantes</li>
+                <li>Regulación de fertilización</li>
+                <li>Recepción de semillas en el campo</li>
+                <li>Inspección de sembradora</li>
+                <li>Verificación de limpieza</li>
+                <li>Control de carga de semillas</li>
+                <li>Regulación de sembradora</li>
+                <li>Densidad de siembra</li>
+                <li>Control de ancho de pasadas</li>
+                <li>Profundidad de siembra</li>
+                <li>Control de calidad de siembra</li>
+                <li>Chequeos periódicos durante la siembra</li>
+                <li>Evaluación de logro</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button id="boton-2" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              COORDINACIÓN DE APLICACIONES
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <ul>
+                <li>Momentos óptimos de aplicaciones</li>
+                <li>Calidad de aplicaciones</li>
+                <li>Logística de agroquímicos</li>
+                <li>Control stock de campo</li>
+                <li>Tarjeteos y verificación de impactos</li>
+              </ul>  
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button id="boton-3" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              MONITOREO INTEGRADO
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <p>Monitoreo de malezas:</p>
+              <ul>
+                <li>Relevamiento integral de malezas</li>
+                <li>Trabajo específico con las problemáticas en la zona</li>
+                <li>Determinación de estadio en el lote</li>
+                <li>Porcentaje de cobertura en el lote</li>
+              </ul>
+              <p>Monitoreo de enfermedades:</p>
+              <ul>
+                <li>Tipo severidad e incidencia</li>
+              </ul>
+              <p>Monitoreo de plagas:</p>
+              <ul>
+                <li>Identificación</li>
+                <li>Cuantificación</li>
+                <li>Capturas de adultos (feromonas)</li>
+                <li>Informe de evolución</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button id="boton-4" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+              MONITOREO DE COSECHA Y PRECOSECHA
+            </button>
+          </h2>
+          <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <ul>
+                <li>Estimación de rindes</li>
+                <li>Recuentos de pureza varietal</li>
+                <li>Toma de muestras para determinar humedad</li>
+                <li>Inspección de cosechadora</li>
+                <li>Verificación de limpieza</li>
+                <li>Monitoreo secuncial de pérdidas</li>
+                <li>Elaboración de informes que permiten la performance de la cosecha</li>
+                <li>Carta de porte - remitos</li>
+                <li>Pedido de camiones</li>
+                <li>Inspección de camiones</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button id="boton-5" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+              RECORRIDAS
+            </button>
+          </h2>
+          <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <ul>
+                <li>Recorridas semanales</li>
+                <li>Toma de imágenes geo referenciales</li>
+                <li>Imágenes NDVI</li>
+                <li>Elaboración de informe por visita</li>
+                <li>Monitoreo con geo posicionamiento, a través de aplicación móvil</li>
+              </ul>  
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- ACORDION -->
+          
+      
+      <!-- SERVICIOS -->
+        
+        <!-- Js -->
+        <script src="./index.js"></script>
+        
+        <!-- Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+</html>
