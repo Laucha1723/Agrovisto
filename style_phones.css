@@ -29,14 +29,14 @@ p, li>a, .accordion-item {
 
 nav{
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 
 nav > button {
     margin: 1.5rem 0 0 9%;
+    z-index: 1;
     border: 2px solid var(--verde-oscuro);
     border-radius: 10px;
-    z-index: 1;
     width: 12%;
 }
 
@@ -129,7 +129,7 @@ ul.menu-horizontal > li.nav-item > a:hover {
     color: white;
     top: 50%;
     left: 50%;
-    font-size: 9vw;
+    font-size: 7vw;
     font-weight: 300;
     opacity: 0.5;
     transform: translate(-50%, -50%);
@@ -245,7 +245,6 @@ ul.menu-horizontal > li.nav-item > a:hover {
     align-content: space-evenly;
     column-gap: 0%;
     row-gap: 2%;
-    padding: 0% 4%;
 }
 
 .item1-grid{
