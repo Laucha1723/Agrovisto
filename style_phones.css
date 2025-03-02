@@ -166,7 +166,7 @@ ul.menu-horizontal > li.nav-item > a:hover{
 }
 
 .carousel > button{
-    height: fit-content;
+    /*height: fit-content;*/
     top: 50%;
 }
 
