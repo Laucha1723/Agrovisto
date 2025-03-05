@@ -96,6 +96,7 @@ ul.menu-horizontal > li.nav-item > a {
     border-radius: 10px;
     padding: 0.7rem 1.3rem;
     /*display: inline-block;*/
+    font-size: 4vw;
     color: var(--verde-oscuro);
 }
 
