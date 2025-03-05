@@ -129,9 +129,11 @@ ul.menu-horizontal > li.nav-item > a:hover{
     left: 0;
 }
 
+
 .carousel-item{
-    position: relative;
+  position: relative;
 }
+
 
 .carousel-item > div{
     position: absolute;
@@ -166,11 +168,12 @@ ul.menu-horizontal > li.nav-item > a:hover{
 }
 
 .carousel > button{
-    /*height: fit-content;*/
+    height: fit-content;
     top: 50%;
 }
 
 .carousel-control-prev, .carousel-control-next{
+    display: block;
     transform: translate(0%, -50%);
 }
 
