@@ -177,9 +177,7 @@ ul.menu-horizontal > li.nav-item > a:hover{
 
 .carousel-control-prev, .carousel-control-next{
     display: block;
-    /*
     transform: translate(0%, -50%);
-    */
 }
 
 /********** LANDING ***********/
