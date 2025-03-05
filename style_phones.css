@@ -75,7 +75,9 @@ a {
     margin: 1rem 0;
     border: solid 1px transparent;
     border-radius: 10px;
+    /*
     padding: 0.7rem 1.3rem;
+    */
 }
 
 /*
@@ -144,7 +146,9 @@ ul.menu-horizontal > li.nav-item > a:hover{
     font-size: 7vw;
     font-weight: 300;
     opacity: 0.5;
+    /*
     transform: translate(-50%, -50%);
+    */
 }
 
 .carousel-item > img{
@@ -175,7 +179,9 @@ ul.menu-horizontal > li.nav-item > a:hover{
 
 .carousel-control-prev, .carousel-control-next{
     display: block;
+    /*
     transform: translate(0%, -50%);
+    */
 }
 
 /********** LANDING ***********/
