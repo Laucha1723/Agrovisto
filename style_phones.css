@@ -170,7 +170,7 @@ ul.menu-horizontal > li.nav-item > a:hover{
     color: white;
 }
 
-.carousel > button{
+.carousel button{
     height: fit-content;
     top: 50%;
 }
