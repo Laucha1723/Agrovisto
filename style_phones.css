@@ -146,9 +146,7 @@ ul.menu-horizontal > li.nav-item > a:hover{
     font-size: 7vw;
     font-weight: 300;
     opacity: 0.5;
-    /*
     transform: translate(-50%, -50%);
-    */
 }
 
 .carousel-item > img{
