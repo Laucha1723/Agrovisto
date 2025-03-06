@@ -150,8 +150,8 @@ a {
     color: white;
 }
 
-.carousel > button{
-    /*height: fit-content;*/
+.carousel button{
+    height: fit-content;
     top: 50%;
 }
 
